@@ -1,35 +1,26 @@
 <template>
-	<div class="app__wrapper">
-		<Header />
-		<div class="content">
-			<RouterView />
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4 col-lg-9"><div class="test">에디터</div></div>
+			<div class="col-sm-4 col-lg-3"><div class="test">채팅방</div></div>
 		</div>
-		<Loading />
+		<div class="row">
+			<div class="col-lg-1"><div class="test">test</div></div>
+			<div class="col-lg-2"><div class="test">test</div></div>
+			<div class="col-lg-3"><div class="test">test</div></div>
+			<div class="col-lg-4"><div class="test">test</div></div>
+		</div>
 	</div>
 </template>
 
 <script>
-import Header from '~/components/Header'
-import Loading from '~/components/Loading'
 export default {
-	components: {
-		Header,
-		Loading,
-	},
+	components: {},
 }
 </script>
 
 <style lang="scss" scoped>
-.app__wrapper {
-	@include flexbox($ai: null);
-	flex-direction: column;
-	color: $COLOR_PRIMARY;
-	font-size: 16px;
-	font-family: 'Noto Sans KR', sans-serif;
-}
-
-.content {
-	padding-top: $HEADER_HEIGHT;
-	flex-grow: 1;
+.test {
+	background: red;
 }
 </style>

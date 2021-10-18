@@ -55,6 +55,7 @@ module.exports = {
                 @import "~/styles/mixins/_position";
                 @import "~/styles/mixins/_responsive";
                 @import "~/styles/mixins/_flexbox";
+                @import "~/styles/layout/_grid";
                 @import "~/styles/_variables";
                 @import "~/styles/_reset";
               `,

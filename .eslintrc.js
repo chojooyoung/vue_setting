@@ -33,14 +33,9 @@ module.exports = {
 		],
 		semi: ['error', 'never'],
 		quotes: ['error', 'single'],
-		'vue/html-closing-bracket-newline': [
-			'error',
-			{
-				singleline: 'never',
-				multiline: 'never',
-			},
-		],
-
+		'vue/html-closing-bracket-newline': 'off',
+		'vue/return-in-computed-property': 'off',
+		'no-unused-vars': 'warn',
 		'vue/html-self-closing': [
 			'error',
 			{
